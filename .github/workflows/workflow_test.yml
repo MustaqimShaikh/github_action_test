@@ -12,7 +12,7 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 jobs:
-  LogintodockerhubDEV:
+  Logintodockerhubdev:
     runs-on: self-hosted
     environment: dev
     steps:
@@ -23,7 +23,7 @@ jobs:
        registry: registry-1.docker.io
        username: ${{secrets.DOCKERHUBUSERNAME}}
        password: ${{secrets.DOCKERHUBPASSWORD}}
-  LogintodockerhubQA:
+  Logintodockerhubqa:
     runs-on: ubuntu-latest
     environment: qa
     steps:
